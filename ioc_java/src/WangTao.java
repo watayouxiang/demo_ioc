@@ -61,26 +61,4 @@ public class WangTao {
         outputStream.close();
     }
 
-    public static class HelloProxy implements HelloInterface {
-        private final HelloInterface helloInterface = new HelloImpl();
-
-        @Override
-        public void sayHello() {
-            System.out.println("before hello ~");
-            helloInterface.sayHello();
-            System.out.println("after hello ~");
-        }
-    }
-
-    public static class HelloImpl implements HelloInterface {
-        @Override
-        public void sayHello() {
-            System.out.println("hello ~");
-        }
-    }
-
-    public interface HelloInterface {
-        void sayHello();
-    }
-
 }
