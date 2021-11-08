@@ -8,7 +8,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.watayouxiang.demo.annotation.InjectLayout;
-import com.watayouxiang.demo.annotation.InjectManager;
 import com.watayouxiang.demo.annotation.InjectView;
 import com.watayouxiang.demo.annotation.OnClick;
 import com.watayouxiang.demo.annotation.OnLongClick;

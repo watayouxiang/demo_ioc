@@ -1,6 +1,10 @@
-package com.watayouxiang.demo.annotation;
+package com.watayouxiang.demo;
 
 import android.view.View;
+
+import com.watayouxiang.demo.annotation.InjectEvent;
+import com.watayouxiang.demo.annotation.InjectLayout;
+import com.watayouxiang.demo.annotation.InjectView;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
