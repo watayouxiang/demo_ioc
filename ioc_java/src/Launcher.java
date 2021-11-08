@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.lang.reflect.*;
 
-public class WangTao {
+public class Launcher {
     public static void main(String[] args) throws Exception {
 //        generateProxyClass();
 //        staticProxy();
