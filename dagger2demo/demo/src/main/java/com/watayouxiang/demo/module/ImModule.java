@@ -1,6 +1,7 @@
-package com.watayouxiang.dagger2demo.module;
+package com.watayouxiang.demo.module;
 
-import com.watayouxiang.dagger2demo.object.HttpClient;
+
+import com.watayouxiang.demo.object.ImClient;
 
 import dagger.Module;
 import dagger.Provides;
@@ -14,9 +15,9 @@ import dagger.Provides;
  * </pre>
  */
 @Module
-public class HttpModule {
+public class ImModule {
     @Provides
-    public HttpClient provideHttpClient(){
-        return new HttpClient();
+    public ImClient provideImClient() {
+        return new ImClient();
     }
 }
