@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.watayouxiang.demo.DemoActivity;
+import com.watayouxiang.demo1.Demo1Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void demoClick(View view) {
         startActivity(new Intent(this, DemoActivity.class));
+    }
+
+    public void demoClick1(View view) {
+        startActivity(new Intent(this, Demo1Activity.class));
     }
 }
