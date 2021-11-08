@@ -2,22 +2,45 @@ import sun.misc.ProxyGenerator;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
+import java.lang.reflect.*;
 
 public class WangTao {
     public static void main(String[] args) throws Exception {
 //        generateProxyClass();
 //        staticProxy();
-        dynamicProxy();
+//        dynamicProxy();
+        reflectDemo();
+    }
+
+    /**
+     * 反射复习
+     */
+    private static void reflectDemo() throws Exception {
+        // 获取字节码
+        Class<?> clazz = Class.forName("Person");
+
+        // 获取构造函数，并实例化对象
+        Constructor<?> constructor = clazz.getConstructor(String.class);
+        Object person = constructor.newInstance("WangTao");
+        System.out.println("---> " + person);
+
+        // 获取私有字段
+        Field nameField = clazz.getDeclaredField("name");
+        nameField.setAccessible(true);
+        Object name = nameField.get(person);
+        System.out.println("---> " + name);
+
+        // 调用私有方法
+        Method sayMethod = clazz.getDeclaredMethod("say", String.class);
+        sayMethod.setAccessible(true);
+        sayMethod.invoke(person, "大家好～");
     }
 
     /**
      * 动态代理
      */
     private static void dynamicProxy() {
-        HelloImpl hello = new HelloImpl();
+        Hello hello = new Hello();
         HelloInterface proxy = (HelloInterface) Proxy.newProxyInstance(
                 // ClassLoader loader
                 hello.getClass().getClassLoader(),

@@ -1,5 +1,5 @@
 public class HelloProxy implements HelloInterface {
-    private final HelloInterface helloInterface = new HelloImpl();
+    private final HelloInterface helloInterface = new Hello();
 
     @Override
     public void sayHello() {
