@@ -1,8 +1,6 @@
 package com.watayouxiang.dagger2demo;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +12,9 @@ import com.watayouxiang.dagger2demo.object.HttpClient;
 
 import javax.inject.Inject;
 
+/**
+ * dagger2 的基本使用
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Inject
@@ -26,12 +27,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.tv_text).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MainActivity2.class));
-            }
-        });
 
         // 注解第一种方式
         DaggerMainComponent.create().injectMainActivity(this);
