@@ -1,20 +1,19 @@
 package com.watayouxiang.dagger2demo;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.watayouxiang.dagger2demo.component.DaggerMainComponent;
+import com.watayouxiang.dagger2demo.module.HttpModule;
+import com.watayouxiang.dagger2demo.module.ImModule;
 import com.watayouxiang.dagger2demo.object.HttpClient;
 import com.watayouxiang.dagger2demo.object.ImClient;
 
 import javax.inject.Inject;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity2 extends AppCompatActivity {
     @Inject
     HttpClient httpClient;
 
@@ -24,17 +23,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
-        DaggerMainComponent.create().injectMainActivity(this);
+        DaggerMainComponent.builder()
+                .httpModule(new HttpModule())
+                .imModule(new ImModule())
+                .build()
+                .injectMainActivity2(this);
 
         TextView tv_text = findViewById(R.id.tv_text);
         tv_text.setText(httpClient.toString());
-        tv_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MainActivity2.class));
-            }
-        });
     }
 }

@@ -9,8 +9,4 @@ package com.watayouxiang.dagger2demo.object;
  * </pre>
  */
 public class HttpClient {
-    @Override
-    public String toString() {
-        return "HttpClient{}";
-    }
 }
