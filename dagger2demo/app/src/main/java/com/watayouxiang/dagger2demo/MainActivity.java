@@ -1,8 +1,9 @@
 package com.watayouxiang.dagger2demo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.watayouxiang.dagger2demo.component.DaggerMainComponent;
 import com.watayouxiang.dagger2demo.module.HttpModule;
@@ -29,10 +30,15 @@ public class MainActivity extends AppCompatActivity {
         DaggerMainComponent.create().injectMainActivity(this);
 
         // 语法2
-//        DaggerMainComponent.builder()
-//                .httpModule(new HttpModule())
-//                .imModule(new ImModule())
-//                .build()
-//                .injectMainActivity(this);
+        if (false) {
+            DaggerMainComponent.builder()
+                    .httpModule(new HttpModule())
+                    .imModule(new ImModule())
+                    .build()
+                    .injectMainActivity(this);
+        }
+
+        TextView tv_text = findViewById(R.id.tv_text);
+        tv_text.setText(httpClient.toString() + ", " + imClient.toString());
     }
 }

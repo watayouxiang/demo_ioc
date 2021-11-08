@@ -9,4 +9,8 @@ package com.watayouxiang.dagger2demo.object;
  * </pre>
  */
 public class ImClient {
+    @Override
+    public String toString() {
+        return "ImClient{}";
+    }
 }
