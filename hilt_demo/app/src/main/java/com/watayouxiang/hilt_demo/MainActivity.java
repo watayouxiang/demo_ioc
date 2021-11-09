@@ -3,13 +3,12 @@ package com.watayouxiang.hilt_demo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.watayouxiang.hilt_demo.http.HttpCallback;
-import com.watayouxiang.hilt_demo.http.HttpHelper;
-import com.watayouxiang.hilt_demo.http.VersionModel;
+import com.watayouxiang.hilt_demo.normal.HttpCallback;
+import com.watayouxiang.hilt_demo.normal.HttpHelper;
+import com.watayouxiang.hilt_demo.normal.VersionModel;
 
 import java.util.HashMap;
 
