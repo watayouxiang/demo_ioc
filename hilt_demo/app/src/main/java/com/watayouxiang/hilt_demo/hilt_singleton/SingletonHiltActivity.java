@@ -31,3 +31,16 @@ public class SingletonHiltActivity extends AppCompatActivity {
         tv_text.append(imClient1.toString());
     }
 }
+
+// Hilt 提供给了如下组件：
+// --------------------------------------------------------------------------------------------------------
+// Android类									生成的组件							作用域
+// --------------------------------------------------------------------------------------------------------
+// Application									ApplicationComponent				@Singleton
+// ViewModel									ActivityRetainedComponent			@ActivityRetainedScope
+// Activity										ActivityComponent					@ActivityScoped
+// Fragment										FragmentComponent					@FragmentScoped
+// View											ViewComponent						@ViewScoped
+// 带有@WithFragmentBindings注释的View			ViewWithFragmentComponent			@ViewScoped
+// Service										ServiceComponent					@ServiceScoped
+// --------------------------------------------------------------------------------------------------------
