@@ -8,17 +8,24 @@
     tools:context=".MainActivity">
 
     <Button
-        android:onClick="test_postReq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="test_postReq"
         android:text="发送一个post请求"
         android:textAllCaps="false" />
 
     <Button
-        android:onClick="test_baseHilt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="test_baseHilt"
         android:text="Hilt基本使用"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test_singletonHilt"
+        android:text="Hilt局部单例"
         android:textAllCaps="false" />
 
 </LinearLayout>
