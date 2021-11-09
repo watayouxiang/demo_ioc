@@ -17,6 +17,7 @@ import dagger.hilt.android.scopes.ActivityScoped;
 @InstallIn(ActivityComponent.class)
 @Module
 public class ImModule {
+
     @ActivityScoped
     @Provides
     public ImClient getImClient() {

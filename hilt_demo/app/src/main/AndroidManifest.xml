@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hilt_demo">
         <activity
+            android:name=".hilt_singleton1.NextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hilt_singleton1.AllSingletonActivity"
+            android:exported="false" />
+        <activity
             android:name=".hilt_singleton.SingletonHiltActivity"
             android:exported="false" />
         <activity

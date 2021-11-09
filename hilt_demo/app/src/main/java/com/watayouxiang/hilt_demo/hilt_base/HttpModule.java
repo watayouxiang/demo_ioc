@@ -16,6 +16,7 @@ import dagger.hilt.android.components.ActivityComponent;
 @InstallIn(ActivityComponent.class)
 @Module
 public class HttpModule {
+
     @Provides
     public HttpClient getHttpClient() {
         return new HttpClient();

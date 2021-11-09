@@ -28,4 +28,11 @@
         android:text="Hilt局部单例"
         android:textAllCaps="false" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test_singleton_all"
+        android:text="Hilt全局单例"
+        android:textAllCaps="false" />
+
 </LinearLayout>
