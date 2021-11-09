@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.watayouxiang.dagger2demo.more_component.MoreComponentActivity;
+import com.watayouxiang.dagger2demo.dependencies.MoreComponentActivity;
 import com.watayouxiang.dagger2demo.simple.DemoActivity;
 import com.watayouxiang.dagger2demo.singleton.DemoActivity1;
 import com.watayouxiang.dagger2demo.singleton1.DemoActivity2;

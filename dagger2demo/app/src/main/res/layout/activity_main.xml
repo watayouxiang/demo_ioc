@@ -11,30 +11,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="demoClick"
-        android:text="dagger2简单使用" />
+        android:text="dagger2简单使用"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="demoClick1"
-        android:text="dagger2局部单例" />
+        android:text="dagger2局部单例"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="demoClick2"
-        android:text="dagger2局部单例（推荐）" />
+        android:text="dagger2局部单例（推荐）"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="demoClick3"
-        android:text="dagger2全局单例" />
+        android:text="dagger2全局单例"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="demoClick4"
-        android:text="dagger2组合依赖-dependencies" />
+        android:text="dagger2组合依赖-dependencies"
+        android:textAllCaps="false" />
 
 </LinearLayout>

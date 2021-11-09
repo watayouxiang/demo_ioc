@@ -1,4 +1,4 @@
-package com.watayouxiang.dagger2demo.more_component;
+package com.watayouxiang.dagger2demo.dependencies;
 
 /**
  * <pre>
@@ -8,5 +8,5 @@ package com.watayouxiang.dagger2demo.more_component;
  *     desc   :
  * </pre>
  */
-public class ImClient {
+public class HttpClient {
 }

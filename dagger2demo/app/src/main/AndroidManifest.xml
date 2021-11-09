@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dagger2demo">
         <activity
-            android:name=".more_component.MoreComponentActivity"
+            android:name=".dependencies.MoreComponentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,9 +1,8 @@
-package com.watayouxiang.dagger2demo.more_component;
+package com.watayouxiang.dagger2demo.dependencies;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.watayouxiang.dagger2demo.R;

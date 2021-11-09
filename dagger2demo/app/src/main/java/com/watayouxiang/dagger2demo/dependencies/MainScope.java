@@ -1,4 +1,4 @@
-package com.watayouxiang.dagger2demo.more_component;
+package com.watayouxiang.dagger2demo.dependencies;
 
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
