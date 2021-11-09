@@ -13,6 +13,9 @@ import javax.inject.Inject;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
+/**
+ * 全局单例
+ */
 @AndroidEntryPoint
 public class AllSingletonActivity extends AppCompatActivity {
 

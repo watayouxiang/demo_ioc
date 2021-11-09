@@ -11,6 +11,9 @@ import javax.inject.Inject;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
+/**
+ * 基本使用
+ */
 @AndroidEntryPoint
 public class BaseHiltActivity extends AppCompatActivity {
 
