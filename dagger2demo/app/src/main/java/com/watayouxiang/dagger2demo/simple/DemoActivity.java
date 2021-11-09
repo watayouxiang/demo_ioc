@@ -1,14 +1,11 @@
-package com.watayouxiang.demo;
+package com.watayouxiang.dagger2demo.simple;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.watayouxiang.demo.component.DaggerDemoComponent;
-import com.watayouxiang.demo.module.HttpModule;
-import com.watayouxiang.demo.module.ImModule;
-import com.watayouxiang.demo.object.HttpClient;
+import com.watayouxiang.dagger2demo.R;
 
 import javax.inject.Inject;
 

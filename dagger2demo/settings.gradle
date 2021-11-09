@@ -8,5 +8,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "dagger2demo"
 include ':app'
-include ':demo'
-include ':demo1'

@@ -1,4 +1,4 @@
-package com.watayouxiang.demo.object;
+package com.watayouxiang.dagger2demo.simple;
 
 /**
  * <pre>

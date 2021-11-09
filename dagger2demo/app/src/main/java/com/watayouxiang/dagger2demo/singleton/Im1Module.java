@@ -1,7 +1,6 @@
-package com.watayouxiang.demo.module;
+package com.watayouxiang.dagger2demo.singleton;
 
-
-import com.watayouxiang.demo.object.ImClient;
+import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -14,10 +13,12 @@ import dagger.Provides;
  *     desc   :
  * </pre>
  */
+@Singleton
 @Module
-public class ImModule {
+public class Im1Module {
+    @Singleton
     @Provides
-    public ImClient provideImClient() {
-        return new ImClient();
+    public Im1Client provideImClient() {
+        return new Im1Client();
     }
 }

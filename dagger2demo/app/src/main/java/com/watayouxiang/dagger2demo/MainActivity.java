@@ -6,8 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.watayouxiang.demo.DemoActivity;
-import com.watayouxiang.demo1.Demo1Activity;
+import com.watayouxiang.dagger2demo.simple.DemoActivity;
+import com.watayouxiang.dagger2demo.singleton.Demo1Activity;
 
 public class MainActivity extends AppCompatActivity {
 

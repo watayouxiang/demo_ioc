@@ -1,9 +1,5 @@
-package com.watayouxiang.demo.component;
+package com.watayouxiang.dagger2demo.simple;
 
-
-import com.watayouxiang.demo.DemoActivity;
-import com.watayouxiang.demo.module.HttpModule;
-import com.watayouxiang.demo.module.ImModule;
 
 import dagger.Component;
 

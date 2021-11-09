@@ -1,4 +1,4 @@
-package com.watayouxiang.demo.object;
+package com.watayouxiang.dagger2demo.singleton;
 
 /**
  * <pre>
@@ -8,5 +8,5 @@ package com.watayouxiang.demo.object;
  *     desc   :
  * </pre>
  */
-public class ImClient {
+public class Im1Client {
 }

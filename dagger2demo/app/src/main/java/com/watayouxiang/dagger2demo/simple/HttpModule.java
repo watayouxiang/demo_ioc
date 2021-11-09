@@ -1,7 +1,5 @@
-package com.watayouxiang.demo.module;
+package com.watayouxiang.dagger2demo.simple;
 
-
-import com.watayouxiang.demo.object.HttpClient;
 
 import dagger.Module;
 import dagger.Provides;

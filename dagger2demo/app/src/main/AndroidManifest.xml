@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".simple.DemoActivity" />
+        <activity android:name=".singleton.Demo1Activity" />
     </application>
 
 </manifest>
