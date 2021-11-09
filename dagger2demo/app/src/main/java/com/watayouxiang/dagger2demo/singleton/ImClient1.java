@@ -8,5 +8,5 @@ package com.watayouxiang.dagger2demo.singleton;
  *     desc   :
  * </pre>
  */
-public class Im1Client {
+public class ImClient1 {
 }

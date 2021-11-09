@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".simple.DemoActivity" />
-        <activity android:name=".singleton.Demo1Activity" />
+        <activity android:name=".singleton.DemoActivity1" />
     </application>
 
 </manifest>

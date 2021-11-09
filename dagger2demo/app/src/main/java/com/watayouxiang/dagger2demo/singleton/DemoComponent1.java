@@ -13,7 +13,7 @@ import dagger.Component;
  * </pre>
  */
 @Singleton
-@Component(modules = {Im1Module.class})
-public interface Demo1Component {
-    void injectDemo1Activity(Demo1Activity demo1Activity);
+@Component(modules = {ImModule1.class})
+public interface DemoComponent1 {
+    void injectDemoActivity1(DemoActivity1 demoActivity1);
 }

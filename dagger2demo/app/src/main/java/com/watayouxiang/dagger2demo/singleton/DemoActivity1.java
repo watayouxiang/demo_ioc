@@ -9,20 +9,23 @@ import com.watayouxiang.dagger2demo.R;
 
 import javax.inject.Inject;
 
-public class Demo1Activity extends AppCompatActivity {
+/**
+ * 局部单例（该单例只能在注入类中局部有效）
+ */
+public class DemoActivity1 extends AppCompatActivity {
 
     @Inject
-    Im1Client imClient;
+    ImClient1 imClient;
 
     @Inject
-    Im1Client imClient2;
+    ImClient1 imClient2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo1);
 
-//        DaggerDemo1Component.create().injectDemo1Activity(this);
+        DaggerDemoComponent1.create().injectDemoActivity1(this);
 
         TextView tv_text = findViewById(R.id.tv_text);
         tv_text.append(imClient.toString());

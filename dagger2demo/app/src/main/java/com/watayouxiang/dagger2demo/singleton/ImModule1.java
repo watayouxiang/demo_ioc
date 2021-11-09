@@ -13,12 +13,11 @@ import dagger.Provides;
  *     desc   :
  * </pre>
  */
-@Singleton
 @Module
-public class Im1Module {
+public class ImModule1 {
     @Singleton
     @Provides
-    public Im1Client provideImClient() {
-        return new Im1Client();
+    public ImClient1 provideImClient1() {
+        return new ImClient1();
     }
 }

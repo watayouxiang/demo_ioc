@@ -7,7 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.watayouxiang.dagger2demo.simple.DemoActivity;
-import com.watayouxiang.dagger2demo.singleton.Demo1Activity;
+import com.watayouxiang.dagger2demo.singleton.DemoActivity1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void demoClick1(View view) {
-        startActivity(new Intent(this, Demo1Activity.class));
+        startActivity(new Intent(this, DemoActivity1.class));
     }
 }
