@@ -1,5 +1,7 @@
 package com.watayouxiang.dagger2demo.others;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -13,8 +15,7 @@ import dagger.Provides;
  */
 @Module
 public class MainModule {
-    // 带参数module
-    private final String baseUrl;
+    private final String baseUrl;// 带参数 module
 
     public MainModule(String baseUrl) {
         this.baseUrl = baseUrl;
@@ -30,5 +31,19 @@ public class MainModule {
     @Provides
     public HttpClient provideHttpClient() {
         return new HttpClient(baseUrl);
+    }
+
+    @Named("jianshu")// @Named 使用
+    @MainScope
+    @Provides
+    public HttpClient provideJianshuClient() {
+        return new HttpClient("https://www.jianshu.com");
+    }
+
+    @Named("weibo")// @Named 使用
+    @MainScope
+    @Provides
+    public HttpClient provideWeiboClient() {
+        return new HttpClient("https://www.weibo.com");
     }
 }

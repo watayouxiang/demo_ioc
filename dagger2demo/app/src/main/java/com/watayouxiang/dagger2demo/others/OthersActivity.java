@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.watayouxiang.dagger2demo.R;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * 其他用法
@@ -21,6 +22,14 @@ public class OthersActivity extends AppCompatActivity {
 
     @Inject
     HttpClient httpClient;
+
+    @Named("jianshu")// @Named 使用
+    @Inject
+    HttpClient jianshuClient;
+
+    @Named("weibo")// @Named 使用
+    @Inject
+    HttpClient weiboClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +45,10 @@ public class OthersActivity extends AppCompatActivity {
         tv_text.append(imClient.toString());
         tv_text.append("\n\n");
         tv_text.append(httpClient.toString());
+        tv_text.append("\n\n");
+        tv_text.append(jianshuClient.toString());
+        tv_text.append("\n\n");
+        tv_text.append(weiboClient.toString());
         tv_text.append("\n\n");
 
 
