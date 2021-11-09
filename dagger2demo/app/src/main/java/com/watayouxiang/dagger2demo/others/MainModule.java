@@ -15,7 +15,7 @@ import dagger.Provides;
  */
 @Module
 public class MainModule {
-    private final String baseUrl;// 带参数 module
+    private final String baseUrl;
 
     public MainModule(String baseUrl) {
         this.baseUrl = baseUrl;
@@ -28,6 +28,7 @@ public class MainModule {
 
     @Provides
     public HttpClient provideHttpClient() {
+        // 带参数 module
         return new HttpClient(baseUrl);
     }
 

@@ -18,31 +18,30 @@ import dagger.Lazy;
  * <p>
  * 1、带参数 module
  * 2、@Named 使用
+ * 3、Lazy 和 Provider
  */
 public class OthersActivity extends AppCompatActivity {
 
     @Inject
     HttpClient httpClient;
 
-    @Named("jianshu")// @Named 使用
+    // @Named 使用
+    @Named("jianshu")
     @Inject
     HttpClient jianshuClient;
 
-    @Named("weibo")// @Named 使用
+    // @Named 使用
+    @Named("weibo")
     @Inject
     HttpClient weiboClient;
 
-    @Inject// 懒加载（不具备局部单例特点）
+    // 懒加载（不具备局部单例特点）
+    @Inject
     Provider<ImClient> provider;
 
-    @Inject// 懒加载（不具备局部单例特点）
-    Provider<ImClient> provider1;
-
-//    @Inject
-//    Lazy<ImClient> lazy;
-//
-//    @Inject
-//    Lazy<ImClient> lazy1;
+    // 懒加载（具备局部单例特点）
+    @Inject
+    Lazy<ImClient> lazy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,26 +54,27 @@ public class OthersActivity extends AppCompatActivity {
                 .injectOthersActivity(this);
 
         TextView tv_text = findViewById(R.id.tv_text);
+        tv_text.append("------ 带参数 module ------");
+        tv_text.append("\n\n");
         tv_text.append(httpClient.toString());
+        tv_text.append("\n\n");
+        tv_text.append("------ @Named 使用 ------");
         tv_text.append("\n\n");
         tv_text.append(jianshuClient.toString());
         tv_text.append("\n\n");
         tv_text.append(weiboClient.toString());
         tv_text.append("\n\n");
-        tv_text.append("\n\n");
-        tv_text.append("\n\n");
         tv_text.append("------ 懒加载（不具备局部单例特点）------");
         tv_text.append("\n\n");
         tv_text.append(provider.get().toString());
         tv_text.append("\n\n");
-        tv_text.append(provider1.get().toString());
+        tv_text.append(provider.get().toString());
         tv_text.append("\n\n");
-//        tv_text.append("------ 懒加载（具备局部单例特点）------");
-//        tv_text.append("\n\n");
-//        tv_text.append(lazy.get().toString());
-//        tv_text.append("\n\n");
-//        tv_text.append(lazy1.get().toString());
-//        tv_text.append("\n\n");
+        tv_text.append("------ 懒加载（具备局部单例特点）------");
+        tv_text.append("\n\n");
+        tv_text.append(lazy.get().toString());
+        tv_text.append("\n\n");
+        tv_text.append(lazy.get().toString());
 
 
     }

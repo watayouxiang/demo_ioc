@@ -1,7 +1,5 @@
 package com.watayouxiang.dagger2demo.others;
 
-import javax.inject.Inject;
-
 /**
  * <pre>
  *     author : TaoWang
@@ -13,7 +11,6 @@ import javax.inject.Inject;
 public class HttpClient {
     private final String baseUrl;
 
-    @Inject
     public HttpClient(String baseUrl) {
         this.baseUrl = baseUrl;
     }
