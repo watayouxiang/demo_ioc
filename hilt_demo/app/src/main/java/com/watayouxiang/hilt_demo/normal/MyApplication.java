@@ -1,9 +1,6 @@
-package com.watayouxiang.hilt_demo;
+package com.watayouxiang.hilt_demo.normal;
 
 import android.app.Application;
-
-import com.watayouxiang.hilt_demo.normal.HttpHelper;
-import com.watayouxiang.hilt_demo.normal.OkHttpProcessor;
 
 /**
  * <pre>
