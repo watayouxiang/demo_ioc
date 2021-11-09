@@ -10,7 +10,6 @@ import dagger.Component;
  *     desc   :
  * </pre>
  */
-@MainScope
 @Component(modules = {MainModule.class})
 public interface MainComponent {
     void injectOthersActivity(OthersActivity activity);

@@ -21,27 +21,23 @@ public class MainModule {
         this.baseUrl = baseUrl;
     }
 
-    @MainScope
     @Provides
     public ImClient provideImClient() {
         return new ImClient();
     }
 
-    @MainScope
     @Provides
     public HttpClient provideHttpClient() {
         return new HttpClient(baseUrl);
     }
 
     @Named("jianshu")// @Named 使用
-    @MainScope
     @Provides
     public HttpClient provideJianshuClient() {
         return new HttpClient("https://www.jianshu.com");
     }
 
     @Named("weibo")// @Named 使用
-    @MainScope
     @Provides
     public HttpClient provideWeiboClient() {
         return new HttpClient("https://www.weibo.com");
