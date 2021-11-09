@@ -11,6 +11,7 @@ import com.watayouxiang.dagger2demo.simple.DemoActivity;
 import com.watayouxiang.dagger2demo.singleton.DemoActivity1;
 import com.watayouxiang.dagger2demo.singleton1.DemoActivity2;
 import com.watayouxiang.dagger2demo.singleton2.AppSingletonActivity;
+import com.watayouxiang.dagger2demo.subcomponent.SubcomponentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,5 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void demoClick4(View view) {
         startActivity(new Intent(this, MoreComponentActivity.class));
+    }
+
+    public void demoClick5(View view) {
+        startActivity(new Intent(this, SubcomponentActivity.class));
     }
 }

@@ -42,4 +42,11 @@
         android:text="dagger2组合依赖-dependencies"
         android:textAllCaps="false" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="demoClick5"
+        android:text="dagger2组合依赖-Subcomponent"
+        android:textAllCaps="false" />
+
 </LinearLayout>

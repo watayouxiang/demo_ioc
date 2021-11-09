@@ -11,9 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dagger2demo">
         <activity
-            android:name=".dependencies.MoreComponentActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -27,6 +24,8 @@
         <activity android:name=".singleton1.DemoActivity2" />
         <activity android:name=".singleton2.AppSingletonActivity" />
         <activity android:name=".singleton2.AppSingletonActivity1" />
+        <activity android:name=".dependencies.MoreComponentActivity" />
+        <activity android:name=".subcomponent.SubcomponentActivity" />
     </application>
 
 </manifest>
