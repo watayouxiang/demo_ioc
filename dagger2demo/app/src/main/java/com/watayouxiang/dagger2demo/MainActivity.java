@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.watayouxiang.dagger2demo.dependencies.MoreComponentActivity;
+import com.watayouxiang.dagger2demo.others.OthersActivity;
 import com.watayouxiang.dagger2demo.simple.DemoActivity;
 import com.watayouxiang.dagger2demo.singleton.DemoActivity1;
 import com.watayouxiang.dagger2demo.singleton1.DemoActivity2;
@@ -44,5 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void demoClick5(View view) {
         startActivity(new Intent(this, SubcomponentActivity.class));
+    }
+
+    public void demoClick6(View view) {
+        startActivity(new Intent(this, OthersActivity.class));
     }
 }

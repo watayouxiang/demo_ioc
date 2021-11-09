@@ -26,6 +26,7 @@
         <activity android:name=".singleton2.AppSingletonActivity1" />
         <activity android:name=".dependencies.MoreComponentActivity" />
         <activity android:name=".subcomponent.SubcomponentActivity" />
+        <activity android:name=".others.OthersActivity" />
     </application>
 
 </manifest>

@@ -49,4 +49,11 @@
         android:text="dagger2组合依赖-Subcomponent"
         android:textAllCaps="false" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="demoClick6"
+        android:text="dagger2其他用法"
+        android:textAllCaps="false" />
+
 </LinearLayout>
