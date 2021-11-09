@@ -2,10 +2,12 @@ package com.watayouxiang.hilt_demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.watayouxiang.hilt_demo.hilt_base.BaseHiltActivity;
 import com.watayouxiang.hilt_demo.normal.HttpCallback;
 import com.watayouxiang.hilt_demo.normal.HttpHelper;
 import com.watayouxiang.hilt_demo.normal.VersionModel;
@@ -30,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, model.toString(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void test_baseHilt(View view) {
+        startActivity(new Intent(this, BaseHiltActivity.class));
     }
 }

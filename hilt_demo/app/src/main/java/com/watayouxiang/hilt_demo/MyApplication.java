@@ -1,6 +1,11 @@
-package com.watayouxiang.hilt_demo.normal;
+package com.watayouxiang.hilt_demo;
 
 import android.app.Application;
+
+import com.watayouxiang.hilt_demo.normal.HttpHelper;
+import com.watayouxiang.hilt_demo.normal.OkHttpProcessor;
+
+import dagger.hilt.android.HiltAndroidApp;
 
 /**
  * <pre>
@@ -10,6 +15,7 @@ import android.app.Application;
  *     desc   :
  * </pre>
  */
+@HiltAndroidApp
 public class MyApplication extends Application {
     @Override
     public void onCreate() {

@@ -14,4 +14,11 @@
         android:text="发送一个post请求"
         android:textAllCaps="false" />
 
+    <Button
+        android:onClick="test_baseHilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hilt基本使用"
+        android:textAllCaps="false" />
+
 </LinearLayout>
