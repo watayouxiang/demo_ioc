@@ -42,4 +42,11 @@
         android:text="Hilt实现隔离层设计"
         android:textAllCaps="false" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test_hilt_demo1"
+        android:text="Hilt实现网络隔离层设计"
+        android:textAllCaps="false" />
+
 </LinearLayout>

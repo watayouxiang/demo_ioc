@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hilt_demo">
         <activity
+            android:name=".hilt_demo1.HiltDemo1Activity"
+            android:exported="false" />
+        <activity
             android:name=".hilt_demo.HiltDemoActivity"
             android:exported="false" />
         <activity

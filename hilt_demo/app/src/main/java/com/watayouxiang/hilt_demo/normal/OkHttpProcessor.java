@@ -8,6 +8,8 @@ import androidx.annotation.NonNull;
 import java.io.IOException;
 import java.util.Map;
 
+import javax.inject.Inject;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -29,6 +31,7 @@ public class OkHttpProcessor implements IHttpProcessor {
     private final OkHttpClient mOkHttpClient;
     private final Handler mHandler;
 
+    @Inject
     public OkHttpProcessor() {
         this.mOkHttpClient = new OkHttpClient();
         this.mHandler = new Handler(Looper.getMainLooper());
