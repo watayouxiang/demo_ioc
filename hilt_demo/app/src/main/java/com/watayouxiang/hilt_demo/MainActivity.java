@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.watayouxiang.hilt_demo.hilt_base.BaseHiltActivity;
+import com.watayouxiang.hilt_demo.hilt_demo.HiltDemoActivity;
 import com.watayouxiang.hilt_demo.hilt_singleton.SingletonHiltActivity;
 import com.watayouxiang.hilt_demo.hilt_singleton1.AllSingletonActivity;
 import com.watayouxiang.hilt_demo.normal.HttpCallback;
@@ -46,5 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void test_singleton_all(View view) {
         startActivity(new Intent(this, AllSingletonActivity.class));
+    }
+
+    public void test_hilt_demo(View view) {
+        startActivity(new Intent(this, HiltDemoActivity.class));
     }
 }
