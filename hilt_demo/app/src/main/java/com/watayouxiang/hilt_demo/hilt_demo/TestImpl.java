@@ -2,7 +2,6 @@ package com.watayouxiang.hilt_demo.hilt_demo;
 
 import android.app.Activity;
 import android.app.Application;
-import android.util.Log;
 
 import javax.inject.Inject;
 
@@ -22,9 +21,11 @@ public class TestImpl implements TestAbs {
     public TestImpl() {
     }
 
+//    @Inject
 //    public TestImpl(@ActivityContext Activity activity) {
 //    }
-//
+
+//    @Inject
 //    public TestImpl(@ApplicationContext Application application) {
 //    }
 
