@@ -10,7 +10,7 @@ import com.watayouxiang.dagger2demo.R;
 import javax.inject.Inject;
 
 /**
- * 多个 Component 组合依赖
+ * 多个 Component 组合依赖（@Component - dependencies）
  */
 public class MoreComponentActivity extends AppCompatActivity {
 
@@ -36,6 +36,8 @@ public class MoreComponentActivity extends AppCompatActivity {
                 .injectMoreComponentActivity(this);
 
         TextView viewById = findViewById(R.id.tv_text);
+        viewById.append("多个 Component 组合依赖（@Component - dependencies）");
+        viewById.append("\n\n");
         viewById.append(imClient.toString());
         viewById.append("\n\n");
         viewById.append(httpClient.toString());
