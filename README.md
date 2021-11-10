@@ -1,6 +1,6 @@
 # ioc_demo
 
 - 动态代理
-- Dagger2 示例
-- Hilt 示例
+- Dagger2 使用教程
+- Hilt 使用教程
 
